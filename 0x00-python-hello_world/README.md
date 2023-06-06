@@ -12,3 +12,12 @@ Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable $PYCODE
 Answer: I used the -c flage which tells the interpreter to run whatever it is after the flag. so like python3 -c "print(2+10)"
+
+
+
+2. Hello, print
+mandatory
+Score: 0.0% (Checks completed: 0.0%)
+Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+
+Use the function print
