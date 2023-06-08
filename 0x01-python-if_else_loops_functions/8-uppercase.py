@@ -7,4 +7,4 @@ def uppercase(str):
             result += chr(newchar)  # add capitalized character to new string
         else:
             result += char  # if already upper, add to new string
-    print(result)
+    print("{}".format(result))
