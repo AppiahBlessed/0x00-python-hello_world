@@ -18,7 +18,7 @@ def roman_to_int(roman_string):
         if symbol not in numerals:  # If the roman_string is not string
             return 0
 # Compare previous value to the next one
-        if value < numerals[roman_string[index]] and index < size:
+        if index < size and value < numerals[roman_string[index + 1]]:
             total = total - value
         else:
             total = total + value
