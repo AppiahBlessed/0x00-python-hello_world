@@ -11,17 +11,15 @@ def roman_to_int(roman_string):
         'C': 100,
         'D': 500,
         'M': 1000,
-            }  #  Hold corresponding roman values
+            }  # Hold corresponding roman values
     for index in range(len(roman_string)):
         symbol = roman_string[index]  # String element when loop runs
-        value = numerals[symbol]  #  Corresponding value defined in dictionary
+        value = numerals[symbol]  # Corresponding value defined in dictionary
         if symbol not in numerals:  # If the roman_string is not string
             return 0
 # Compare previous value to the next one
         if value < numerals[roman_string[index]] and index < size:
-                total = total - value
+            total = total - value
         else:
-                total = total + value
+            total = total + value
     return total
-
-
