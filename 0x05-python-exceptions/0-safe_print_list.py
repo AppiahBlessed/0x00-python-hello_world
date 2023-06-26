@@ -3,7 +3,6 @@
 
 def safe_print_list(my_list=[], x=0):
     count = 0
-
     for i in my_list:
         count += 1  # Get the length of list
     try:
@@ -12,4 +11,7 @@ def safe_print_list(my_list=[], x=0):
     except Exception:
         pass  # Dont print any error
     print()  # Print new line
-    return count
+    if (x < count):
+        return x
+    else:
+        return count
