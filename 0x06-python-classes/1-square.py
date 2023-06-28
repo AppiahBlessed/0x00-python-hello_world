@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Writes a class Square"""
 
 
@@ -9,6 +9,5 @@ class Square:
         """Main entry method
         Args:
             below are the Arguements
-            size in this case
         """
         self.__size = size
