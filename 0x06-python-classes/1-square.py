@@ -7,7 +7,8 @@ class Square:
 
     def __init__(self, size):
         """Main entry method
-            and below are the Arguements
+        Args:
+            below are the Arguements
             size in this case
         """
         self.__size = size
