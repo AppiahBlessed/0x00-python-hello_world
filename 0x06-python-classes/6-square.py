@@ -5,12 +5,14 @@
 class Square:
     """Square class with modules"""
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize object instance"""
         self.size = size
         self.position = position
 
     @property
     """Property set to get size att"""
     def size(self):
+        """Return size"""
         return self.__size
 
     @size.setter
@@ -27,6 +29,7 @@ class Square:
     @property
     """Property set to get position att"""
     def position(self):
+        """Position attribute value"""
         return self.position
 
     @position.setter
