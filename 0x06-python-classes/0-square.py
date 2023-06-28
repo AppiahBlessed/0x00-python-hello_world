@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# 0-square.py
+"""Contains a class square"""
+
 
 class Square:
+    """Marks definition of class"""
     pass
