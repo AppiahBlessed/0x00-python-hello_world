@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""6-square.py"""
+"""Square class with modules"""
 
 
 class Square:
@@ -9,10 +9,12 @@ class Square:
         self.position = position
 
     @property
+    """Property set to get size att"""
     def size(self):
         return self.__size
 
     @size.setter
+    """Property set to set size att"""
     def size(self, value):
         """Sets size attribute values"""
         if not isinstance(value, int):
@@ -23,11 +25,14 @@ class Square:
             self.__size = value
 
     @property
+    """Property set to get position att"""
     def position(self):
         return self.position
 
     @position.setter
+    """Property set to set position att"""
     def position(self, value):
+        """Check all cases of position error; verification"""
         if (
                 not isinstance(value, tuple)
                 or len(value) != 2
