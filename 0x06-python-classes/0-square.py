@@ -6,4 +6,5 @@ class Square:
         param1: The first parameter.
         param1: The first parameter.
         param1: The first parameter.
-    """.
+    """
+    pass
