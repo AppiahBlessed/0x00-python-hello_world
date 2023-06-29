@@ -4,19 +4,23 @@
 
 class Square:
     """Square class with modules"""
+
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize object instance"""
+        """Initialize object instance
+
+        Args:
+        size (int): The size of the new square.
+        position (int, int): The position of the new square.
+        """
         self.size = size
         self.position = position
 
     @property
-    """Property set to get size att"""
     def size(self):
         """Return size"""
         return self.__size
 
     @size.setter
-    """Property set to set size att"""
     def size(self, value):
         """Sets size attribute values"""
         if not isinstance(value, int):
@@ -27,13 +31,11 @@ class Square:
             self.__size = value
 
     @property
-    """Property set to get position att"""
     def position(self):
         """Position attribute value"""
-        return self.position
+        return (self.__position)_
 
     @position.setter
-    """Property set to set position att"""
     def position(self, value):
         """Check all cases of position error; verification"""
         if (
@@ -49,12 +51,13 @@ class Square:
 
     def area(self):
         """Returns area of square"""
-        return self.__size ** 2
+        return (self.__size ** 2)
 
     def my_print(self):
         """Prints the square"""
         if self.__size == 0:
             print()
+            return
 # Print both vertical and horizontal blanks
             else:
                 if self.__position[1] > 0:
