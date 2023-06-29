@@ -33,7 +33,7 @@ class Square:
     @property
     def position(self):
         """Position attribute value"""
-        return (self.__position)_
+        return (self.__position)
 
     @position.setter
     def position(self, value):
@@ -59,8 +59,8 @@ class Square:
             print()
             return
 # Print both vertical and horizontal blanks
-            else:
-                if self.__position[1] > 0:
-                    print("\n" * self.__position[1], end='')
-                for i in range(self.__size):
-                    print(" " * self.__position[0] + "#" * self.__size)
+        else:
+            if self.__position[1] > 0:
+                print("\n" * self.__position[1], end='')
+            for i in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
