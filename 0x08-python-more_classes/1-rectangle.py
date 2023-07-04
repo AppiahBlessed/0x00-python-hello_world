@@ -4,7 +4,6 @@
 
 class Rectangle:
     '''Defines rectangle'''
-    pass
 
     def __init__(self, width=0, height=0):
         '''Initialise instance'''
@@ -41,3 +40,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def __str__(self):
+        '''String representation of object'''
+        return f"Rectangle (width={self.__width}, height={self.__height})"
