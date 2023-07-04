@@ -82,15 +82,11 @@ class Rectangle:
         '''Method that returns the biggest among
         the given instances
         '''
-        first = rect_1.width * rect_1.height
-        second = rect_2.width * rect_2.height
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         elif not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if first > second:
+        if rect_1.area() > rect_2.area() or rect_1.area() == rect_2.area():
             return rect_1
-        elif second > first:
+        elif rect_1.area() < rect_2.area():
             return rect_2
-        elif first == second:
-            return rect_1
