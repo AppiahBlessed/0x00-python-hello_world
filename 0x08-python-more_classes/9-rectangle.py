@@ -14,8 +14,8 @@ class Rectangle:
     def square(cls, size=0):
         '''returns a new instance'''
         new = Rectangle()
-        new.__width = size
-        new.__height = size
+        new.width = size
+        new.height = size
         return new
 
     def __init__(self, width=0, height=0):
