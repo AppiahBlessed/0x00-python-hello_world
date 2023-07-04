@@ -47,7 +47,7 @@ class Rectangle:
 
     def perimeter(self):
         '''Finds the permeter of the rectangle'''
-        if self.width == 0 and self.height == 0:
+        if self.width == 0 or self.height == 0:
             perim = 0
         else:
             perim = 2 * (self.width + self.height)
