@@ -203,3 +203,31 @@ What does this script print?
 a = (1, 2)
 b = (1, 2)
 a is b
+
+26. Empty is not empty
+mandatory
+What does this script print?
+
+a = ()
+b = ()
+a is b
+
+27. Still the same?
+mandatory
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+Will the last line of this script print 139926795932424? Answer with Yes or No.
+
+28. Same or not?
+mandatory
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
+Will the last line of this script print 139926795932424? Answer with Yes or No.
