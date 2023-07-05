@@ -231,3 +231,13 @@ mandatory
 >>> a += [4]
 >>> id(a)
 Will the last line of this script print 139926795932424? Answer with Yes or No.
+
+
+29. #pythonic
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Write a function magic_string() that returns a string “BestSchool” n times the number of the iteration (see code):
+
+Format: see example
+Your file should be maximum 4-line long (no documentation needed)
+You are not allowed to import any module
