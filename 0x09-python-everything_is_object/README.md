@@ -77,3 +77,82 @@ What do these 3 lines print?
 
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
+
+11. And with a list, is it the same
+mandatory
+What do these 3 lines print?
+
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 is l2)
+
+12. And with a list, is it really equal
+mandatory
+What do these 3 lines print?
+
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 == l2)
+
+
+13. And with a list, is it really the same
+mandatory
+What do these 3 lines print?
+
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 is l2)
+
+
+14. List append
+mandatory
+What does this script print?
+
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2)
+
+15. List add
+mandatory
+What does this script print?
+
+l1 = [1, 2, 3]
+l2 = l1
+l1 = l1 + [4]
+print(l2)
+
+16. Integer incrementation
+mandatory
+What does this script print?
+
+def increment(n):
+    n += 1
+
+a = 1
+increment(a)
+print(a)
+
+
+17. List incrementation
+mandatory
+What does this script print?
+
+def increment(n):
+    n.append(4)
+
+l = [1, 2, 3]
+increment(l)
+print(l)
+
+18. List assignation
+mandatory
+What does this script print?
+
+def assign_value(n, v):
+    n = v
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1)
