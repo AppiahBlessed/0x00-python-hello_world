@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Function is meant to append'''
 
+
 def append_write(filename="", text=""):
     '''Function is meant to append to either an
         existing file or create one where it doesnt exit
