@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''12-pascal_triangle.py'''
 
+
 def pascal_triangle(n):
     '''Function returns the ppascal triangle
         witht the number of rows based on n
