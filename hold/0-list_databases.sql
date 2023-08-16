@@ -1,0 +1,2 @@
+-- Displays databases
+SHOW DATABASES;
