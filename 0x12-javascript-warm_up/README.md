@@ -112,3 +112,10 @@ If no argument passed, print 0
 If the number of arguments is 1, print 0
 You must use console.log(...) to print all output
 You are not allowed to use var
+
+
+12. Object
+mandatory
+Update this script to replace the value 12 with 89:
+
+You are not allowed to use var
