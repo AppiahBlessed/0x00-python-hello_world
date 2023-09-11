@@ -7,10 +7,13 @@
 // Get the number
 const arg3 = process.argv[2];
 
+// Attempt to convert arg to in
+const num = parseInt(arg3)
+
 // Checks if arguement is not a number an uses '!' to negate
 
-if (!isNaN(arg3)) {
-  console.log('My number is: ' + arg3);
+if (!isNaN(num)) {
+  console.log('My number is: ' + num);
 } else {
   console.log('Not a number');
 }
