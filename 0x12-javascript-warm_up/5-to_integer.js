@@ -8,7 +8,7 @@
 const arg3 = process.argv[2];
 
 // Attempt to convert arg to in
-const num = parseInt(arg3)
+const num = parseInt(arg3);
 
 // Checks if arguement is not a number an uses '!' to negate
 
