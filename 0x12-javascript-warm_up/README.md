@@ -101,3 +101,21 @@ You must do it recursively
 You must use a function
 You must use console.log(...) to print all output
 You are not allowed to use var
+
+
+11. Second biggest!
+mandatory
+Write a script that searches the second biggest integer in the list of arguments.
+
+You can assume all arguments can be converted to integer
+If no argument passed, print 0
+If the number of arguments is 1, print 0
+You must use console.log(...) to print all output
+You are not allowed to use var
+
+
+12. Object
+mandatory
+Update this script to replace the value 12 with 89:
+
+You are not allowed to use var
