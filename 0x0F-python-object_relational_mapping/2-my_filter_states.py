@@ -21,8 +21,8 @@ def main():
     with MySQLdb.connect(host='localhost', port=3306, user=u, password=pd,
                          db=db_name) as connect, connect.cursor() as cursor:
         # Execute query using the format string
-        cursor.execute("SELECT * FROM states WHERE name LIKE
-                       '{}'".format(state_name))
+        cursor.execute("""SELECT * FROM states WHERE name
+                        LIKE '{}' ORDER BY states.id ASC""".format(state_name))
 
         # Display results
         output = cursor.fetchall()
