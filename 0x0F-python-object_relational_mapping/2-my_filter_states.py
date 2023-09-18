@@ -22,7 +22,7 @@ def main():
                          db=db_name) as connect, connect.cursor() as cursor:
         # Execute query using the format string
         cursor.execute("""SELECT * FROM states WHERE name
-                        LIKE '{}' ORDER BY states.id ASC""".format(state_name))
+                        LIKE BINARY '{}' ORDER BY states.id ASC""".format(state_name))
 
         # Display results
         output = cursor.fetchall()
