@@ -30,6 +30,8 @@ def main():
         # Get the individual rows
         tmp = list(row[0] for row in output)
         print(*tmp, sep=", ")
+
+
 # Module should not automatically run when imported
 if __name__ == "__main__":
     main()
