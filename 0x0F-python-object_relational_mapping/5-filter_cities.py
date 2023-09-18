@@ -23,18 +23,13 @@ def main():
         cursor.execute("""SELECT cities.name FROM
                         cities INNER JOIN states
                         ON states.id=cities.state_id
-                        WHERE states.name=%s""", (state_name, ))
+                        WHERE states.name=%s""", (state_name,))
 
         # Display results
         output = cursor.fetchall()
         # Get the individual rows
-        for idx, value in enumerate(output):
-            if (idx < (len(output) - 1)):
-                print(f"{value[0]}, ", end='')
-            else:
-                print(f"{value[0]} ")
-
-
+        tmp = list(row[0] for row in output)
+        print(*tmp, sep=", ")
 # Module should not automatically run when imported
 if __name__ == "__main__":
     main()
