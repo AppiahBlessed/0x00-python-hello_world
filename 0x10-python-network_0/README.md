@@ -25,6 +25,37 @@ awk is a text processing tool that splits input lines into fields and performs a
 
 
 
+Task 1
+===========================================================================
+
+
+
+
+===========================================================================
+A 302 status code in HTTP is a "Found" or "Temporary Redirect" response. It indicates that the requested resource has been temporarily moved to a different URL, and the client should continue to request the resource from that new URL in the future.
+
+Here's a brief explanation:
+
+When a server sends a 302 response, it typically includes a Location header in the response, specifying the new URL to which the client should redirect.
+
+The client (usually a web browser or another HTTP client like curl) then automatically makes a new request to the URL provided in the Location header.
+
+The new request is usually a GET request to the new URL, and the server at that new URL may respond with the actual content or another redirect.
+
+302 redirects are often used for scenarios like:
+
+Temporary maintenance or load balancing: When a web application or service is temporarily unavailable at a specific URL, it might redirect users to another server or location that can handle their requests while maintenance is ongoing.
+
+URL normalization: Servers may use 302 redirects to enforce a canonical URL format, redirecting users to the preferred URL.
+
+It's important to note that a 302 response is temporary, and clients should continue to use the original URL in future requests unless instructed otherwise by the server. If you want the client to permanently use the new URL, you should use a 301 status code ("Moved Permanently") instead.
+
+
+Redirect Handling: Make sure that your code is configured to follow redirects. In some cases, tools like curl may not automatically follow redirects unless you explicitly enable this behavior. With curl, you can use the -L or --location option to tell it to follow redirects:
+
+
+
+
 
 
 
