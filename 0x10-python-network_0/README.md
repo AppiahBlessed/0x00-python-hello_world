@@ -92,3 +92,25 @@ curl -X DELETE "https://example.com/resource/123"
 This command will send a DELETE request to the specified URL, indicating that you want to delete the resource located at that URL.
 
 
+
+
+
+Task 3
+===========================================================================
+3. cURL only methods
+mandatory
+Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+==============================================================================
+awk '{$1 = ""; sub(/^ /, ""); print $0}' filename
+
+{$1 = ""}: This command sets the first field ($1) to an empty string.
+
+sub(/^ /, ""): This command removes the leading space at the beginning of the line.
+
+print $0: This command prints the modified line.
+
+This way, it removes the first field and the leading space, producing the desired output without a space before the first word.
