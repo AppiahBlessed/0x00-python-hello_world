@@ -27,10 +27,13 @@ awk is a text processing tool that splits input lines into fields and performs a
 
 Task 1
 ===========================================================================
+1. cURL to the end
+mandatory
+Write a Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response
 
-
-
-
+Display only body of a 200 status code response
+You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
 ===========================================================================
 A 302 status code in HTTP is a "Found" or "Temporary Redirect" response. It indicates that the requested resource has been temporarily moved to a different URL, and the client should continue to request the resource from that new URL in the future.
 
@@ -56,7 +59,36 @@ Redirect Handling: Make sure that your code is configured to follow redirects. I
 
 
 
+Task 2
+============================================================================
+2. cURL Method
+mandatory
+Write a Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
 
+You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+============================================================================
 
+To send a DELETE request to a server using curl in Bash, you can use the following command:
+
+bash
+Copy code
+curl -X DELETE "$url"
+Replace "$url" with the URL where you want to send the DELETE request.
+
+Here's a breakdown of the command:
+
+curl: Invokes the curl command for making HTTP requests.
+
+-X DELETE: Specifies the HTTP method as DELETE. The -X option is used to set the HTTP request method to DELETE explicitly.
+
+"$url": This is where you should provide the URL to which you want to send the DELETE request.
+
+For example, if you want to send a DELETE request to "https://example.com/resource/123," you would use:
+
+bash
+Copy code
+curl -X DELETE "https://example.com/resource/123"
+This command will send a DELETE request to the specified URL, indicating that you want to delete the resource located at that URL.
 
 
