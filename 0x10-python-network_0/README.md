@@ -133,3 +133,21 @@ Here's a breakdown of how -H works:
 
 -H "X-School-User-Id: 98": This option adds an HTTP header to the request. The header is specified as a string in the format "Header-Name: Header-Value". In this case, it sets the X-School-User-Id header to 98.
 HTTP headers are used to convey additional information in an HTTP request or response. In this script, the X-School-User-Id header is added to the request to fulfill the requirement of sending the header variable with the value 98 along with the GET request. This allows you to include custom information that the server may expect or require in the request headers.
+
+
+Task 5
+=============================================================================
+5. cURL POST parameters
+mandatory
+Write a Bash script that takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+
+A variable email must be sent with the value test@gmail.com
+A variable subject must be sent with the value I will always be here for PLD
+You have to use curl
+
+============================================================================
+
+OST Request with Form Data:
+
+In a POST request, you can pass name-value pairs as form data using the -d or --data option in curl. The data is typically sent in the request body, and you specify the data in the format name=value.
+Example: curl -d "param1=value1&param2=value2" -X POST "https://example.com/api"
