@@ -113,4 +113,23 @@ sub(/^ /, ""): This command removes the leading space at the beginning of the li
 
 print $0: This command prints the modified line.
 
-This way, it removes the first field and the leading space, producing the desired output without a space before the first word.
+This way, it removes the first field and the leading space, producing the desired output without a space before the first word
+
+
+
+
+Task 4
+============================================================================
+4. cURL headers
+mandatory
+Write a Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+
+A header variable X-School-User-Id must be sent with the value 98
+You have to use curl
+============================================================================
+In the curl command, the -H option is used to specify custom HTTP headers to include in the request. In the script I provided earlier, -H is used to add the X-School-User-Id header with the value 98 to the GET request.
+
+Here's a breakdown of how -H works:
+
+-H "X-School-User-Id: 98": This option adds an HTTP header to the request. The header is specified as a string in the format "Header-Name: Header-Value". In this case, it sets the X-School-User-Id header to 98.
+HTTP headers are used to convey additional information in an HTTP request or response. In this script, the X-School-User-Id header is added to the request to fulfill the requirement of sending the header variable with the value 98 along with the GET request. This allows you to include custom information that the server may expect or require in the request headers.
