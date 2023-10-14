@@ -1,1 +1,0 @@
-Scopes, Closures and Objects
