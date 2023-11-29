@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    This script lists all states from a database
+    This script filters the output
 '''
 # Importing modules
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     curs = connection.cursor()
 
     # Execute query
-    curs.execute("SELECT * FROM states ORDER BY id ASC;")
+    curs.execute("SELECT * FROM states WHERE SUBSTRING(name, 1, 1) = 'N' ORDER BY id ASC;")
 
     # Display results
     results= curs.fetchall()

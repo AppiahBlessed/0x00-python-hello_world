@@ -27,4 +27,27 @@ The results of the query are fetched using cursor.fetchall(), and the script the
 
 Displaying Results:
 
-The script prints the retrieved data, demonstrating a successful connection to the MySQL database
+The script printshe retrieved data, demonstrating a successful connection to the MySQL database
+==============================================================================
+==============================================================================
+
+SUBSTRING Usage
+In SQL, the SUBSTRING function is used to extract a substring from a string. It allows you to specify the starting position and the length of the substring to be extracted. The basic syntax is as follows:
+
+sql
+Copy code
+SUBSTRING(string_expression, start_position, length)
+string_expression: The source string from which the substring will be extracted.
+start_position: The position within the string_expression where the extraction will begin. The first character is at position 1.
+length: (Optional) The number of characters to be extracted. If omitted, the substring includes all characters from start_position to the end of the string.
+Example Usage in the Script
+In the provided script, the SUBSTRING function is utilized in the SQL query to filter the results based on the first letter of the "name" column:
+
+sql
+Copy code
+curs.execute("SELECT * FROM states WHERE SUBSTRING(name, 1, 1) = 'N' ORDER BY id ASC;")
+This query selects all rows from the "states" table where the first letter of the "name" column is 'N'. Here's a breakdown:
+
+SUBSTRING(name, 1, 1): Extracts the first character of the "name" column.
+= 'N': Compares the extracted character with the letter 'N'.
+This allows for a specific filtering criterion based on the initial character of the "name" column.
