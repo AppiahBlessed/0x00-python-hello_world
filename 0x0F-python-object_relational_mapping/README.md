@@ -50,4 +50,9 @@ This query selects all rows from the "states" table where the first letter of th
 
 SUBSTRING(name, 1, 1): Extracts the first character of the "name" column.
 = 'N': Compares the extracted character with the letter 'N'.
-This allows for a specific filtering criterion based on the initial character of the "name" column.
+This allows for a specific filtering criterion based on the initial character of the "name" column
+
+
+
+Script for Filtering States
+This script utilizes string substitution to query the "states" table in the hbtn_0e_0_usa database. It takes four arguments—MySQL username, password, database name, and a state name to search. The results are sorted by states.id in ascending order, displaying matches with the specified state name..
