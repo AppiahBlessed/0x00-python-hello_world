@@ -23,3 +23,7 @@ if __name__ == "__main__":
     results= curs.fetchall()
     for result in results:
         print(f"({result[0]}, '{result[1]}')")
+
+    # Close connection and cursor
+    curs.close()
+    connection.close()

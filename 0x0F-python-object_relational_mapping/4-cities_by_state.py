@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    This script lists all states from a database
+    This script emphasizes string substitution
 '''
 # Importing modules
 
@@ -17,13 +17,11 @@ if __name__ == "__main__":
     curs = connection.cursor()
 
     # Execute query
-    curs.execute("SELECT * FROM states ORDER BY id ASC;")
-
+    curs.execute("SELECT * FROM states JOIN cities ON states.id = cities.state_id ORDER BY states.id ASC;")
     # Display results
     results= curs.fetchall()
     for result in results:
-        print(f"({result[0]}, '{result[1]}')")
-
+        print(f"({result[2]}, '{result[4]}', {result[1]})")
     # Close connection and cursor
     curs.close()
     connection.close()
