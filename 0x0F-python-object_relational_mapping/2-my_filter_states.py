@@ -17,8 +17,12 @@ if __name__ == "__main__":
     curs = connection.cursor()
 
     # Execute query
-    curs.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC;", (param,))
+    curs.execute(f"SELECT * FROM states WHERE name='{param}' ORDER BY id ASC;")
     # Display results
     results= curs.fetchall()
     for result in results:
         print(f"({result[0]}, '{result[1]}')")
+
+    # Close connection and cursor
+    curs.close()
+    connection.close()
