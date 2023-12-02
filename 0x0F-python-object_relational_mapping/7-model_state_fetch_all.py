@@ -18,7 +18,7 @@ if __name__ == '__main__':
     session = Session()
     
     # Execute query
-    results = session.query(State).order_by(State.id).all()
+    results = session.query(State).order_by(State.name).all()
     # Print output
     for res in results:
         print(f"{res.id}: {res.name}")
