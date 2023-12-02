@@ -1,7 +1,7 @@
 #!/usr/bin/pyhton3
-'''
+"""
     This is a script that defines a class
-'''
+"""
 
 # Neccessary imports
 import sqlalchemy
