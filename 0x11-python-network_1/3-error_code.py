@@ -12,5 +12,6 @@ if __name__ == "__main__":
     try:
         with urllib.request.urlopen(url) as resp:
             output = resp.read()
+            print(output.decode('utf-8'))
     except HTTPError as e:
         print("Error code: {}".format(e.code))
