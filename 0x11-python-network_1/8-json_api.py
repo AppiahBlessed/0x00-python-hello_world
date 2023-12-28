@@ -6,7 +6,7 @@
 if __name__ == "__main__":
     import requests
     import sys
-    
+
     url = "http://0.0.0.0:5000/search_user"
     if len(sys.argv) < 2:
         letter = ""
@@ -14,11 +14,11 @@ if __name__ == "__main__":
         letter = sys.argv[1]
     data = {"q": letter}
     resp = requests.post(url, data=data)
-    
+
     # Just to catch any JSON error
     try:
         json_data = resp.json()
-        # if the json data is empty or valid 
+        # if the json data is empty or valid
         if json_data and isinstance(json_data, (list, dict)):
             # get the id
             id_data = json_data.get("id")
@@ -32,6 +32,5 @@ if __name__ == "__main__":
         elif not isinstance(json_data, (list, dict)):
             print("Not a valid JSON")
     # Catch exception
-    except requests.exceptions.JSONDecodeError:
+    except ValueError:
         print("Not a valid JSON")
-
