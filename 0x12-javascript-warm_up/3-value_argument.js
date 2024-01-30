@@ -4,8 +4,8 @@
 */
 
 const lists = process.argv;
-if (lists[1] === undefined) {
-	console.log("No argument");
+if (lists[2] === undefined) {
+  console.log('No argument');
 } else {
-	console.log(lists[2]);
+    console.log(lists[2]);
 }
