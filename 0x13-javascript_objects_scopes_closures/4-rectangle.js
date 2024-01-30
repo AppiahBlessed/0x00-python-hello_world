@@ -1,30 +1,32 @@
 #!/usr/bin/node
-/**
-* The continuation of the Rectangle class
-*/
 class Rectangle {
-// Class declaration
-	constructor(w, h){
-		if (w > 0 || h > 0) {
-			this.width = w;
-			this.heigth = h;
-		}
-	}
-	
-// Method prints a square
-	print(){
-		for (let i = 0; i < this.h; i++){
-			console.log('X'.repeat(this.w));
-		}
-	}
+  constructor (w, h) {
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
+    }
+  }
 
-// This method rotates the rectangle
-	rotate(){
-		print(this.heigth, this.width)
-	}
-// This method doubles the height and width
-	double(){
-		this.width = this.width * 2;
-		this.height = this.height * 2;
-	}
-};
+  print () {
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
+      }
+      console.log(s);
+    }
+  }
+
+  rotate () {
+    const aux = this.width;
+    this.width = this.height;
+    this.height = aux;
+  }
+
+  double () {
+    this.width *= 2;
+    this.height *= 2;
+  }
+}
+
+module.exports = Rectangle;
