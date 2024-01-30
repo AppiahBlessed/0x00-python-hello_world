@@ -11,6 +11,7 @@ if (process.argv.length !== 3) {
 if (num >= 0) {
 	for (let i = 0; i < num; i++) {
 		console.log("C is fun");
-} else {
-	console.log("");
+//} else {
+//	console.log("");
+}
 }
