@@ -10,11 +10,11 @@ function add(a, b) {
 	a = num1;
 	b = num2;
 // Checking if arg is a number
-	if (isNaN(a) || isNaN(b)) {
-		console.log("NaN");
+if (isNaN(a) || isNaN(b)) {
+  console.log("NaN");
 } else {
-	console.log(a + b);
+  console.log(a + b);
 }
-
+}
 // Calling the function
 add(num1, num2);

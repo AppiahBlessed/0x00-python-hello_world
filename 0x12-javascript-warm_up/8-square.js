@@ -5,7 +5,7 @@
 
 const num = parseInt(process.argv[2]);
 
-if (isNaN(num) || process.argv[2]  === undefined) {
+if (isNaN(num) || process.argv[2] === undefined) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < num; i++) {
