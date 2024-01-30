@@ -14,7 +14,7 @@ function add (a, b) {
     console.log('NaN');
   } else {
     console.log(a + b);
-}
+  }
 }
 // Calling the function
 add(num1, num2);
