@@ -3,18 +3,18 @@
 * The continuation of the Rectangle class
 */
 class Rectangle {
-// Class declaration
-	constructor(w, h){
-		if (w > 0 || h > 0) {
-			this.width = w;
-			this.heigth = h;
-		}
-	}
+  constructor (w, h) {
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
+    }
+  }
 	
-// Method prints a square
-	print(){
-		for (let i = 0; i < this.heigth; i++){
-			console.log('X'.repeat(this.width));
-		}
-	}
-};
+  print(){
+    for (let i = 0; i < this.height; i++){
+      console.log('X'.repeat(this.width));
+    }
+   } 
+}
+
+module.exports = Rectangle
