@@ -1,28 +1,26 @@
 #!/usr/bin/node
 /**
-* This script searches and prints the second biggest integer
-*/
+ * This script searches and prints the second biggest integer
+ */
 
 const lists = process.argv;
+
 if (process.argv.length <= 3) {
-	console.log("0");
+  console.log("0");
 } else {
-// Getting the maximum number
-	let max = lists[2];
-	let secondmax = lists[2];
-// Looping through the list
-	for (let i = 3; i < process.argv.length; i++) {
-		const current = lists[i];
+  let max = parseInt(lists[2]);
+  let secondMax = parseInt(lists[2]);
 
-		if (current > max) {
-			secondmax = max;
-			max = current;
+  for (let i = 3; i < process.argv.length; i++) {
+    const current = parseInt(lists[i]);
 
-		} else if (secondmax < current && current < max) {
-			secondmax = current;
+    if (current > max) {
+      secondMax = max;
+      max = current;
+    } else if (current > secondMax && current < max) {
+      secondMax = current;
+    }
+  }
 
-		} // End of inner else
-	} // End of for lopp
-
-	console.log(secondmax);
-} // end of else
+  console.log(secondMax);
+}
